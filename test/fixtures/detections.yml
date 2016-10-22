@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tag_id: 1
+  sensor_id: 1
+  time: 2016-10-22 15:24:35
+
+two:
+  tag_id: 1
+  sensor_id: 1
+  time: 2016-10-22 15:24:35
