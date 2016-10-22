@@ -31,6 +31,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#gem bourbon
+gem 'bourbon'
+
+#gem administrate
+gem "administrate", "~> 0.2.2"
 
 #gem devise for long in
 gem 'devise'
