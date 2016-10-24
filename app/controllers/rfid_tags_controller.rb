@@ -5,7 +5,7 @@ class RfidTagsController < ApplicationController
   # GET /rfid_tags.json
   def index
     @rfid_tags = RfidTag.all
-    @rfid_tags_json = render_to_string( formats: 'json' )
+   # @rfid_tags_json = render_to_string( formats: 'json' )
 
 
   end

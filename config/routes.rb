@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :lendings
   resources :sensors
   resources :detections
-  resources :users
+  #resources :users
 
 
   # The priority is based upon order of creation: first created -> highest priority.
