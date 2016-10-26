@@ -1,3 +1,24 @@
 // Place all the styles related to the visitor controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.bg{
+	
+	height: 500px;
+	width: auto;
+	background-image: url("1.jpg");
+	background-size: 100%;
+	margin-right: 0px;
+	margin-left: -20px;
+	margin: -40px;
+	background-repeat: no-repeat;
+
+
+}
+
+#center{
+
+	text-align: center;
+	padding:15%;
+}
