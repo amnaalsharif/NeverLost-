@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :lendings
   resources :sensors
   resources :detections
+  resources :map
+  resources :visitor
   #resources :users
 
 
