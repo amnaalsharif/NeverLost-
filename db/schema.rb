@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161106072635) do
+ActiveRecord::Schema.define(version: 20161107072945) do
 
   create_table "detections", force: :cascade do |t|
     t.integer  "tag_id"
@@ -32,9 +32,9 @@ ActiveRecord::Schema.define(version: 20161106072635) do
 
   create_table "rfid_tags", force: :cascade do |t|
     t.integer  "tag_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean  "status"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "status",     default: false
   end
 
   create_table "sensors", force: :cascade do |t|

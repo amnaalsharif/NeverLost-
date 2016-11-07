@@ -5,7 +5,7 @@ class RfidTagsController < ApplicationController
   # GET /rfid_tags.json
   def index
     @rfid_tags = RfidTag.all
-    @rfid_tags_json = render_to_string( formats: 'json' )
+    # @rfid_tags_json = render_to_string( formats: 'json' )
 
 
   end
@@ -72,6 +72,7 @@ class RfidTagsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rfid_tag_params
-      params.require(:rfid_tag).permit(:tag_id)
+      params.require(:rfid_tag).permit(:tag_id,:status)
     end
+    
 end

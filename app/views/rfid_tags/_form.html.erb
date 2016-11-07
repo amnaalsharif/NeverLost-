@@ -13,7 +13,11 @@
 
   <div class="field">
     <%= f.label :tag_id %><br>
-    <%= f.number_field :tag_id %>
+    <%= f.number_field :tag_id %><br>
+
+    <%= f.label :status %><br>
+    <%= f.check_box :status%>
+
   </div>
   <div class="actions">
     <%= f.submit %>
