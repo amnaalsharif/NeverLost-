@@ -5,11 +5,8 @@ class RfidTagsController < ApplicationController
   # GET /rfid_tags.json
   def index
     @rfid_tags = RfidTag.all
-<<<<<<< HEAD
     # @rfid_tags_json = render_to_string( formats: 'json' )
-=======
    # @rfid_tags_json = render_to_string( formats: 'json' )
->>>>>>> 578ea63115a95c1c38fbca8860fa06c1d35e7f01
 
 
   end
@@ -49,6 +46,7 @@ class RfidTagsController < ApplicationController
   def update
     respond_to do |format|
       if @rfid_tag.update(rfid_tag_params)
+        
         format.html { redirect_to @rfid_tag, notice: 'Rfid tag was successfully updated.' }
         format.json { render :show, status: :ok, location: @rfid_tag }
       else

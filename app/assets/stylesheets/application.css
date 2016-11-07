@@ -17,3 +17,6 @@
  *= require_tree .
  *= require_self
  */
+#error_explanation h2 {
+  display: none;
+}
