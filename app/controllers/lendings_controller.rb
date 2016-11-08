@@ -25,7 +25,10 @@ class LendingsController < ApplicationController
   # POST /lendings.json
   def create
     @lending = Lending.new(lending_params)
+    
+    RfidTag.where(tag_id: @lending.tag_id).update_all(:status => 't')
 
+   
     respond_to do |format|
       if @lending.save
         format.html { redirect_to @lending, notice: 'Lending was successfully created.' }
@@ -42,6 +45,8 @@ class LendingsController < ApplicationController
   def update
     respond_to do |format|
       if @lending.update(lending_params)
+        # @rfid_tag = RfidTag.new(params(:tag_id),'t')
+        # @rfid_tag.update
         format.html { redirect_to @lending, notice: 'Lending was successfully updated.' }
         format.json { render :show, status: :ok, location: @lending }
       else
@@ -71,4 +76,8 @@ class LendingsController < ApplicationController
     def lending_params
       params.require(:lending).permit(:tag_id, :user_id, :from, :to)
     end
+
+    # def rfid_tag_params
+    #   params.require(:lending).permit(:tag_id,true)
+    # end
 end
