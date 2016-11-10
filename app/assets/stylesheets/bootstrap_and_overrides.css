@@ -30,6 +30,7 @@
 
   margin: 0;
  background-image: url('1.jpg');
+background-size: contain;
 
 }
 
