@@ -8,24 +8,24 @@
 <table class="table table-hover">
   <thred>
       <tr>
-        <th>Tag</th>
-        <th>User</th>
-        <th>From</th>
-        <th>To</th>
-        <th>Actions</th>
+        <th id= "tablefont">Tag</th>
+        <th id= "tablefont">User</th>
+        <th id= "tablefont">From</th>
+        <th id= "tablefont">To</th>
+        <th id= "tablefont">Actions</th>
       </tr>
   </thread>
   <tbody>
       <% @lendings.each do |lending| %>
        <tr>
-        <td><%= lending.tag_id %></td>
+     <td><%= lending.tag_id %></td>
         <td><%= lending.user.name %></td>
         <td><%= lending.from %></td>
         <td><%= lending.to %></td>
         <td>
-          <%= link_to 'Show', lending %>
-          <%= link_to 'Edit', edit_lending_path(lending) %>
-          <%= link_to 'Destroy', lending, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Show', lending,class: 'btn btn-large btn-info' %>
+          <%= link_to 'Edit', edit_lending_path(lending),class: 'btn btn-large btn-info' %>
+     <a class="btn btn-large btn-info"     <%= link_to 'Destroy', lending, method: :delete, data: { confirm: 'Are you sure?' } %></a>
         </td>
       </tr>
       <% end %>
