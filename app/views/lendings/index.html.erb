@@ -1,43 +1,38 @@
 <p id="notice"><%= notice %></p>
 </br>
-  <div id="blue">
 <h1>Lendings</h1>
-</div>
-
 <div class="table-responsive">
 
-
-  <table class="table table-bordered">
-  <% @lendings.each do |lending| %>
+<table class="table table-hover">
+  <thred>
       <tr>
-        <th id= "tablefont">Tag</th>
+        <th>Tag</th>
+        <th>User</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Actions</th>
+      </tr>
+  </thread>
+  <tbody>
+      <% @lendings.each do |lending| %>
+       <tr>
         <td><%= lending.tag_id %></td>
-      </tr>
-      <tr>
-        <th id= "tablefont">User</th>
         <td><%= lending.user.name %></td>
-      </tr>
-      <tr>
-        <th id= "tablefont">From</th>
         <td><%= lending.from %></td>
-      </tr>
-      <tr>
-        <th id= "tablefont">To</th>
         <td><%= lending.to %></td>
+        <td>
+          <%= link_to 'Show', lending %>
+          <%= link_to 'Edit', edit_lending_path(lending) %>
+          <%= link_to 'Destroy', lending, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       </tr>
-
-     </table>
-     </table>
-
-        <a class="btn btn-large btn-info" <%= link_to 'Show', lending %></a>
-       <a class="btn btn-large btn-info"  <%= link_to 'Edit', edit_lending_path(lending) %></a>
-      
-     <a class="btn btn-large btn-info"  <%= link_to 'Destroy', lending, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+      <% end %>
+  </tbody>
     
-    <% end %>
+  </table>
+  </div>
 
- 
-</div>
+
 <br>
-<a class="btn btn-large btn-info"
-<%= link_to 'New Lending', new_lending_path %></a>
+
+<%= link_to 'New Lending', new_lending_path %>

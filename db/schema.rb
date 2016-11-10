@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109141222) do
+ActiveRecord::Schema.define(version: 20161110101536) do
 
   create_table "detections", force: :cascade do |t|
     t.string   "tag_id"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20161109141222) do
   end
 
   create_table "lendings", force: :cascade do |t|
-    t.integer  "tag_id"
+    t.string   "tag_id"
     t.integer  "user_id"
     t.datetime "from"
     t.datetime "to"
