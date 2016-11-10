@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
-
+<div id="blue">
 <h1>Listing Sensors</h1>
-
-<table>
+</div>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Sensor</th>
       <th>Date</th>
       <th>Coordinate</th>
-      <th colspan="3"></th>
+      <th>Actions</th>
     </tr>
   </thead>
 
@@ -18,9 +18,11 @@
         <td><%= sensor.sensor_id %></td>
         <td><%= sensor.date %></td>
         <td><%= sensor.coordinate %></td>
-        <td><%= link_to 'Show', sensor %></td>
-        <td><%= link_to 'Edit', edit_sensor_path(sensor) %></td>
-        <td><%= link_to 'Destroy', sensor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to 'Show', sensor %>
+          <%= link_to 'Edit', edit_sensor_path(sensor) %>
+          <%= link_to 'Destroy', sensor, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Sensor', new_sensor_path %>
+<%= link_to 'New Sensor', new_sensor_path, class: 'btn btn-large btn-info' %>

@@ -21,6 +21,6 @@
   <%= @lending.to %> 
 </p>
 
- <a class="btn btn-large btn-info"<%= link_to 'Edit', edit_lending_path(@lending) %></a>
+ <%= link_to 'Edit', edit_lending_path(@lending),  class: 'btn btn-large btn-info' %></a>
   |
-<a class="btn btn-large btn-info"<%= link_to 'Back', lendings_path %></a>
+<%= link_to 'Back', lendings_path, class: 'btn btn-large btn-info' %>
