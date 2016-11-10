@@ -15,8 +15,7 @@
     color: #fff;
     font-size: 20px;
       font-family: "Comic Sans MS", sans-serif;
-
-}
+    }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-size: 20px;
@@ -30,7 +29,7 @@
 */
 
   margin: 0;
- background-image: url(1.jpg);
+ background-image: url('1.jpg');
 
 }
 
@@ -42,30 +41,36 @@
     background-color: #8D8B8B;
     border-color: #46b8da;
 }
+
 .navbar {
     margin-bottom: 0;
 }
+
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
    
     color: #7f7e7e;
 }
 
+
 .btn 
 {
         font-family: "Comic Sans MS", sans-serif;
 
 }
+
 .btn-large 
 {
         font-family: "Comic Sans MS", sans-serif;
 
 }
+
 .btn-info
 {
         font-family: "Comic Sans MS", sans-serif;
 
 }
+
 .table-bordered>tbody>tr:nth-child(even)>td, 
 .table-bordered>tbody>tr:nth-child(even)>th,
 .table-bordered>tbody>tr:nth-child(odd)>td, 
@@ -141,6 +146,5 @@ textarea.form-control {
 
 /* footer */
     .footer-content {
-        width: 380px;
-    }
-}
+        width: 380px;}
+
