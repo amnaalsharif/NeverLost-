@@ -8,21 +8,23 @@
 
   .navbar-default {
     background-color: #9B9B9B;
-    border-color: #e7e7e7;}
+    border-color: #46b8da;
+    border-width: 1px;}
 
     .navbar-default .navbar-brand {
     color: #fff;
     font-size: 20px;
-    	font-family: "Comic Sans MS", sans-serif;
+      font-family: "Comic Sans MS", sans-serif;
 
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-size: 20px;
-    	font-family: "Comic Sans MS", sans-serif;
+      font-family: "Comic Sans MS", sans-serif;
 
 
 }
+
 #noorbody {
 /*    background-color: #D5D5D5;
 */

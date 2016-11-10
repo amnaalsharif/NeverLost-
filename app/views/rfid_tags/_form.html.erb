@@ -12,15 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :tag_id %><br>
+   <div id="font"> <%= f.label :tag_id %>:<br></div>
     <%= f.text_field :tag_id %><br>
-
-    <%= f.label :status %><br>
-    <p>Uncheck if tag is returned</p>
-    <p> yes <%= f.check_box :status%></p>
+<br>
+    <div id="font">
+  <%= f.label :status %>:<br></div>
+    <p id=font>Uncheck if tag is returned  | yes <%= f.check_box :status%></p>
 
   </div>
   <div class="actions">
-    <%= f.submit %>
+       <div id="font">
+     <%= f.submit %>
+   </div>
+   <br>
   </div>
+ 
 <% end %>

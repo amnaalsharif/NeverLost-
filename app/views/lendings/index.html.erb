@@ -1,34 +1,43 @@
 <p id="notice"><%= notice %></p>
 </br>
+  <div id="blue">
 <h1>Lendings</h1>
+</div>
 
-<table class="table table-strped">
+<div class="table-responsive">
+
+
+  <table class="table table-bordered">
   <% @lendings.each do |lending| %>
       <tr>
-        <th>Tag</th>
+        <th id= "tablefont">Tag</th>
         <td><%= lending.tag_id %></td>
       </tr>
       <tr>
-        <th>User</th>
+        <th id= "tablefont">User</th>
         <td><%= lending.user.name %></td>
       </tr>
       <tr>
-        <th>From</th>
+        <th id= "tablefont">From</th>
         <td><%= lending.from %></td>
       </tr>
       <tr>
-        <th>To</th>
+        <th id= "tablefont">To</th>
         <td><%= lending.to %></td>
       </tr>
 
-      <tr>
-        <td><%= link_to 'Show', lending %></td>
-        <td><%= link_to 'Edit', edit_lending_path(lending) %></td>
-        <td><%= link_to 'Destroy', lending, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+     </table>
+     </table>
+
+        <a class="btn btn-large btn-info" <%= link_to 'Show', lending %></a>
+       <a class="btn btn-large btn-info"  <%= link_to 'Edit', edit_lending_path(lending) %></a>
+      
+     <a class="btn btn-large btn-info"  <%= link_to 'Destroy', lending, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+    
     <% end %>
-  </table>
 
+ 
+</div>
 <br>
-
-<%= link_to 'New Lending', new_lending_path %>
+<a class="btn btn-large btn-info"
+<%= link_to 'New Lending', new_lending_path %></a>

@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
+<br>
 
 <p>
-  <strong>Tag:</strong>
+  <strong id="font">Tag:</strong>
   <%= @lending.tag_id %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong id="font">User:</strong>
   <%= @lending.user.name %>
 </p>
 
 <p>
-  <strong>From:</strong>
+  <strong id="font">From:</strong>
   <%= @lending.from %>
 </p>
 
 <p>
-  <strong>To:</strong>
-  <%= @lending.to %>
+  <strong id="font">To:</strong>
+  <%= @lending.to %> 
 </p>
 
-<%= link_to 'Edit', edit_lending_path(@lending) %> |
-<%= link_to 'Back', lendings_path %>
+ <a class="btn btn-large btn-info"<%= link_to 'Edit', edit_lending_path(@lending) %></a>
+  |
+<a class="btn btn-large btn-info"<%= link_to 'Back', lendings_path %></a>

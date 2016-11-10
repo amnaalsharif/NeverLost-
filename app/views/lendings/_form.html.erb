@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  
+  <div id="font">
   <div class="field">
     <%= f.label :tag_id %><br>
     <%= f.select :tag_id, options_from_collection_for_select(RfidTag.all.where('status = ?','f'), :tag_id, :tag_id ) %>
@@ -30,8 +30,12 @@
     <%= f.datetime_select :to %>
   </div>
 </br>
+
   <div class="actions">
+
     <%= f.submit %>
   </div>
+</div>
 </br>
 <% end %>
+
