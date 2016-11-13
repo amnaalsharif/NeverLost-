@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161110101536) do
+ActiveRecord::Schema.define(version: 20161113131846) do
 
   create_table "detections", force: :cascade do |t|
     t.string   "tag_id"
-    t.integer  "sensor_id"
+    t.string   "sensor_id"
     t.datetime "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20161110101536) do
   end
 
   create_table "sensors", force: :cascade do |t|
-    t.integer  "sensor_id"
+    t.string   "sensor_id"
     t.datetime "date"
     t.text     "coordinate"
     t.datetime "created_at", null: false
