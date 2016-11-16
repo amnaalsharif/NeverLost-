@@ -765,18 +765,18 @@
            <script>
    $(document).ready(function(){
      $("#cchange").click(function(){
-         $.getJSON("http://localhost:3000/detections.json", function(data){
+         $.getJSON("https://neverlost.herokuapp.com/detections.json", function(data){
           var ourdata = parseInt(data["2"]["sensor_id"]);
             alert(ourdata);
-            if(ourdata == 2)
+            if(ourdata == 1)
             {
               alert("inside if");
               $('#rect').css({'fill':"#231F20"});
             }
-            if(ourdata == 1)
+            if(ourdata == 2)
             {
               alert("inside if");
-              $('#rect').css({'fill':"FF0000"});
+              $('#sensor2').css({'fill':"FF0000"});
             }
             
          });
