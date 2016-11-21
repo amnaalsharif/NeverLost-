@@ -2,22 +2,28 @@
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <html>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 </script>
 
-<div id= "noorbody">
+<script src="app/assests/javascripts/modernizr.custom.js"></script>
+
+<link href="app/assests/stylesheets/style.css" rel="stylesheet" media="screen">
+
+<link href="app/assests/stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+
 <body>
 
-<div class="row">
-<div class="col-xl-28">
-
-<div class= "bg">
-
-
-<!-- <div class = "background"> -->
+    <!-- intro --> 
+  <div id="intro">    
+      <div class="intro-text">
+        <div class="container">
+          <div class="row">           
+          <div class="col-md-12">   
+            <div class="brand">
 
               <div id="centern"><h1>NeverLost</h1>
-
       <div id="white">
               <p>We aim to provide a sense of safety for parents and children to ensure that they have a worry free experience.</p>
                 </div>
@@ -25,51 +31,151 @@
                 <a class="btn btn-large btn-info" href=" /users/sign_in">Log In!</a>
                 </div>
                 </div>
-            
-              </div>  
-              </div>
-  </div>
-</div>
-
-
-
-<%= render 'new' %>
-
-
-
-
-
-
-
-
-<section id="contact">
-        <div class="container">
-          <div class="row">
-            
-            <div class="sec-title text-center wow animated fadeInDown">
-           <br>
-                <br>
-              
             </div>
-            
-
-            
-            <div class="col-md-5 wow animated fadeInRight">
-              <address class="contact-details">
-                <div id="blue">Contact Us</div>   
-                <br>  
-                <br>        
-                <p id="font"><i class="fa fa-pencil"></i>Luqta St.<span>PO Box 4680</span> <span>Doha </span><span>Qatar</span></p><br>
-                <p id="font"><i class="fa fa-phone"></i>Phone: (974) 66552242 </p>
-                <p id="font"><i class="fa fa-envelope"></i>never@lost.com</p>
-              </address>
-            </div>
-      
+          </div>
           </div>
         </div>
-      </section>
-      <!-- end Contact section -->
-</body>
+      </div>     
+   </div>   
+    <!-- intro --> 
 
+
+  
+
+
+   <!-- Services -->
+   <section id="services" class="home-section bg-white">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+           <h2>Services</h2>
+           <p>Est te congue scaevola comprehensam. No pri simul decore, in partem electram voluptatibus vel esse facer.</p>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <i class="fa fa-code fa-4x"></i>
+            <h4>Valid HTML5</h4>
+            <p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
+          </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <i class="fa fa-cog fa-4x"></i>
+            <h4>Easy to Customize</h4>
+            <p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
+          </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <i class="fa fa-desktop fa-4x"></i>
+            <h4>Responsive Layout</h4>
+            <p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
+          </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <i class="fa fa-dropbox fa-4x"></i>
+            <h4>Ready to use</h4>
+            <p>Lorem ipsum dolor sit amet, ut decore iracundia urbanitas sit.</p>
+          </div>
+                </div>
+        </div>  
+    </div>
+  </section>
+
+   <!-- Services -->
+
+
+<div id= "noorbody">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+         <!-- Contact -->
+    <section id="contact" class="home-section bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+           <h2>Contact us</h2>
+           <p>Contact via form below and we will be get in touch with you within 24 hours. </p>
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
+
+ <%= render 'new' %>
+
+  
+          </div>
+      
+        
+        </div>
+
+         <!-- Contact -->
+
+
+      <div class="row mar-top30 ">
+        <div class="col-md-offset-2 col-md-8">
+          <h5>We're on social networks</h5>
+          <ul class="social-network">
+            <li><a href="#">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span></a>
+            </li>
+            <li><a href="#">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+            </span></a>
+            </li>
+            <li><a href="#">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span></a>
+            </li>
+            <li><a href="#">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+            </span></a>
+            </li>
+          </ul>
+        </div>        
+      </div>
+
+      </div>
+    </section> 
+
+</body>
+    <script src="app/assets/javascripts/jquery.js"></script>
+    <script src="app/assets/javascripts/bootstrap.min.js"></script>
+  <script src="app/assets/javascripts/jquery.smooth-scroll.min.js"></script>
+  <script src="app/assets/javascripts/jquery.dlmenu.js"></script>
+  <script src="app/assets/javascripts/wow.min.js"></script>
+  <script src="app/assets/javascripts/custom.js"></script>
 </html>
 
