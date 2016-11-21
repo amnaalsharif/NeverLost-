@@ -15,7 +15,8 @@ Rails.application.routes.draw do
 
   resources :map
   resources :visitor
-
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+resources "contacts", only: [:new, :create]
   #resources :users
 
 
