@@ -112,7 +112,7 @@ table {border-collapse: collapse;border-spacing:0}
  
 td,th {padding: 0}
  
-@media print {*}
+/*@media print {*}*/
  
 a,a:visited {text-decoration: underline}
  
