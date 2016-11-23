@@ -7,10 +7,14 @@ class MapController < ApplicationController
 	end
 	def show
 		#@rfid_tags =Detection.find(:all,:include => :lending)
-		@rfid_tags = Detection.joins(:lending)
+		@lendings = current_user.lendings
+		d = Array.new
+		@lendings.each do |lending|
+			d << lending.rfid_tag.detections
+		end
 		#@rfid_tags_json = render_to_string( formats: 'json' )
 		# format.json { render json: @rfid_tags, status: :unprocessable_entity }
-		render :json => @rfid_tags
+		render :json => d
 	end
 
 
