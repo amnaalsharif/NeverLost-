@@ -1,0 +1,1 @@
+json.array! @rfid_tags, partial: 'map/show', as: :map
