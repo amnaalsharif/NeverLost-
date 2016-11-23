@@ -1,0 +1,12 @@
+      <div>
+       
+        <%= @rfid_tags.order('fielded DESC') do |rfid_tag|%>
+        <td><%= rfid_tag.tag_id %></td>
+        
+            <td><%= rfid_tag.sensor_id %></td>
+           <td><%= rfid_tag.time%></td>
+         
+
+        <%end%>
+
+       </div>

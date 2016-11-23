@@ -73,3 +73,16 @@ x// Place all the styles related to the visitor controller here.
 {
 	background-color: #A9A29C;
 } */
+
+#intro {
+    height: 635px;
+    width: 100%;
+    background-color: #529abb;
+    background-image: url('1.jpg');
+	background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    text-align: center;
+    position: relative;
+}

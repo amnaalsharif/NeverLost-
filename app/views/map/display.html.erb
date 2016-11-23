@@ -1,0 +1,13 @@
+      <div>
+       
+        <%= @rfid_tags.each do |rfid_tag|%>
+        <td><%= rfid_tag.tag_id %></td>
+          <%= @detections.each do |detection|%>
+            <td><%= detection.rfid_tag.tag_id %></td>
+            <td><%= detection.rfid_tag.sensor_id %></td>
+           <td><%= detection.rfid_tag.time%></td>
+          <%end%>
+
+        <%end%>
+
+       </div>

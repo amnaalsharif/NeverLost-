@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   resources :detections
 
   resources :map
+  match '/display', to: 'map#display', via: 'get'
+
   resources :visitor
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]

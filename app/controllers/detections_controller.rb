@@ -10,7 +10,13 @@ class DetectionsController < ApplicationController
   # GET /detections
   # GET /detections.json
   def index
+   # @detections = Detection.all
+   if params[:search]
+    @detections = Detection.search(params[:search])
+  else
     @detections = Detection.all
+  end
+  
   end
 
   # GET /detections/1

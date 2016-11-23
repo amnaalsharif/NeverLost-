@@ -18,6 +18,9 @@
     <% @rfid_tags.each do |rfid_tag| %>
       <tr>
         <td><%= rfid_tag.tag_id %></td>
+        <td><%= sensor.tag_id %></td>
+
+        <td><%= rfid_tag.tag_id %></td>
         <td><%= rfid_tag.status%></td>
         <td>
           <%= link_to 'Show', rfid_tag %>
