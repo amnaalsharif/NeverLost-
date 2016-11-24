@@ -776,14 +776,18 @@
     $('#rect').hide();
     $('#sensor2').hide();
      $("#cchange").click(function(){
-         $.getJSON("https://neverlost.herokuapp.com/map/show", function(data){
-          var sensor = parseInt(data["0"]["sensor_id"]);
-        
-            if(sensor == 1)
+         $.getJSON("http://localhost:3000/map/show", function(data){
+
+          console.log(data);
+
+          var sensor = parseInt(data["0"]["0"]["sensor_id"]);
+            if(sensor == "1")
             {
+             
               $('#rect').show();
+              
             }
-            if(sensor == 2)
+            if(sensor == "2")
             {
               
               $('#sensor2').show();
