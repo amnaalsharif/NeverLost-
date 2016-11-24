@@ -15,6 +15,19 @@ x// Place all the styles related to the visitor controller here.
 	
 
 
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:280px;
+    background-color:#eee;
+}
+
+
+
 
 
 }
@@ -22,15 +35,15 @@ x// Place all the styles related to the visitor controller here.
 #centern{
 
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Century Gothic';
 	font-size: 50px;
-	color: #46b8da;
+	color: #fff;
 }
 
 
 #paragraph
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Century Gothic';
 	font-size: 20px;
 	
 
@@ -38,7 +51,7 @@ x// Place all the styles related to the visitor controller here.
 
 #blue
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Century Gothic';
 	font-size: 30px;
 	color: #46b8da;
 
@@ -46,7 +59,7 @@ x// Place all the styles related to the visitor controller here.
 
 #white
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Century Gothic';
 	font-size: 20px;
 	color: #fff;
 
@@ -56,7 +69,7 @@ x// Place all the styles related to the visitor controller here.
 
 #font
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Century Gothic';
 	font-size: 19px;
 	color: #9B9B9B;
 
@@ -64,25 +77,30 @@ x// Place all the styles related to the visitor controller here.
 
 #tablefont
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Century Gothic';
 	font-size: 15px;
 	color: #46b8da;
 }
 
-/*#noor
-{
-	background-color: #A9A29C;
-} */
 
 #intro {
     height: 635px;
     width: 100%;
-    background-color: #529abb;
     background-image: url('1.jpg');
-	background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     overflow-y: hidden;
     text-align: center;
     position: relative;
+    margin:0 auto;
 }
+
+/*
+@media only screen and (max-width: 479px){
+    #intro { width: 90%; }
+}
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
+}*/

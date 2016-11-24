@@ -28,7 +28,7 @@
         <td>
           <%= link_to 'Show', detection,class: 'btn btn-large btn-info' %>
           <%= link_to 'Edit', edit_lending_path(detection),class: 'btn btn-large btn-info' %>
-     <a class="btn btn-large btn-info"     <%= link_to 'Destroy', detection, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+          <%= link_to 'Destroy', detection, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-large btn-info' %>
         </td>
       </tr>
       <% end %>
@@ -42,3 +42,6 @@
 <br>
 
 <%= link_to 'New Detection', new_detection_path %>
+</br>
+</br>
+</br>

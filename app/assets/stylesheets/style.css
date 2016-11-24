@@ -76,14 +76,14 @@ button.navbar-toggle {
 	color: #fff;
 }
 
-.btn-theme,.btn-theme:hover,.btn-theme:focus{
-	color: #fff;
+/*.btn-theme,.btn-theme:hover,.btn-theme:focus{
+	color: #d3dded;
 }
 .btn-theme:hover{
 	background: transparent !important;
-	border-color: #999;
-	color: #999;
-}
+	border-color:  #d3dded;
+	color:  #d3dded;
+}*/
 
 
 /* ================================
@@ -183,8 +183,7 @@ Intro
 #intro{
     height:635px;
     width:100%;
-    background-color: #529abb;
-    background-image: url(../img/bg-mac.png);
+    background-image: url('1.jpg');
     background-position:center;
     background-repeat:no-repeat;
     overflow-y:hidden;
@@ -547,7 +546,7 @@ more media queries
 
 @media (max-width:768px) {
 	#intro{
-		background-image: url(../img/bg-mac.png);
+		background-image: url('1.jpg');
 		background-size:100%;
 	}
 	.box-team, .box-team img {
@@ -575,6 +574,6 @@ more media queries
 
 @media (max-width:480px){
 	#intro{
-		background-image: none;
+		background-image: url('1.jpg');
 	}
 }

@@ -20,9 +20,9 @@
         <td><%= rfid_tag.tag_id %></td>
         <td><%= rfid_tag.status%></td>
         <td>
-          <%= link_to 'Show', rfid_tag %>
-          <%= link_to 'Edit', edit_rfid_tag_path(rfid_tag) %>
-          <%= link_to 'Destroy', rfid_tag, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Show', rfid_tag, class: 'btn btn-large btn-info' %>
+          <%= link_to 'Edit', edit_rfid_tag_path(rfid_tag), class: 'btn btn-large btn-info' %>
+          <%= link_to 'Destroy', rfid_tag, method: :delete, data: { confirm: 'Are you sure?' } , class: 'btn btn-large btn-info'%>
         </td>
       </tr>
     <% end %>
@@ -31,3 +31,6 @@
 
 <br>
 <%= link_to 'New Rfid tag', new_rfid_tag_path, class: 'btn btn-large btn-info' %>
+</br>
+</br>
+</br>

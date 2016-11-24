@@ -19,9 +19,9 @@
         <td><%= sensor.date %></td>
         <td><%= sensor.coordinate %></td>
         <td>
-          <%= link_to 'Show', sensor %>
-          <%= link_to 'Edit', edit_sensor_path(sensor) %>
-          <%= link_to 'Destroy', sensor, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Show', sensor, class: 'btn btn-large btn-info' %>
+          <%= link_to 'Edit', edit_sensor_path(sensor), class: 'btn btn-large btn-info' %>
+          <%= link_to 'Destroy', sensor, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-large btn-info' %>
         </td>
       </tr>
     <% end %>
@@ -31,3 +31,6 @@
 <br>
 
 <%= link_to 'New Sensor', new_sensor_path, class: 'btn btn-large btn-info' %>
+</br>
+</br>
+</br>

@@ -26,7 +26,7 @@ input[type="color"],
 }
 
 input.input-block-level{
-	padding:20px;
+  padding:20px;
 }
 
 .input-append input,
@@ -190,8 +190,8 @@ input.search-query {
 
 
 .btn {
-	font-weight: 700;
-	text-transform: uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
   text-shadow: none;
   background-image:none;
   border-color: none;
@@ -202,7 +202,7 @@ input.search-query {
 }
 
 .btn {
-	outline:0;
+  outline:0;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
@@ -210,8 +210,8 @@ input.search-query {
 
 
 a.btn,.btn:focus {
-	outline:0;
-	
+  outline:0;
+  
 }
 
 .btn-medium {
@@ -237,4 +237,5 @@ a.btn,.btn:focus {
      -moz-border-radius: 0;
           border-radius: 0;
 }
+
 
