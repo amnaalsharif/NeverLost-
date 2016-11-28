@@ -777,13 +777,13 @@
     $('#sensor2').hide();
    $(document).ready(function(){
 
-    setInterval(getDetections,500);
+    setInterval(getDetections,5000);
     function getDetections()
     {
 
 
      
-         $.getJSON("http://neverlost.herokuapp.com/map/show", function(data){
+         $.getJSON("https://neverlost.herokuapp.com/map/show", function(data){
         
          
           var sensor = parseInt(data["0"][(data["0"].length)-1]["sensor_id"]);
@@ -796,7 +796,7 @@
             if(sensor == "2")
             {
               $('#sensor2').show();
-              alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
+              //alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
             }
             
          });
