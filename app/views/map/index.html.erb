@@ -772,29 +772,36 @@
 
 
            <script>
-   $(document).ready(function(){
+
     $('#rect').hide();
     $('#sensor2').hide();
-     $("#cchange").click(function(){
-         $.getJSON("http://localhost:3000/map/show", function(data){
+   $(document).ready(function(){
 
-          console.log(data);
+    setInterval(getDetections,500);
+    function getDetections()
+    {
 
-          var sensor = parseInt(data["0"]["0"]["sensor_id"]);
+
+     
+         $.getJSON("http://neverlost.herokuapp.com/map/show", function(data){
+        
+         
+          var sensor = parseInt(data["0"][(data["0"].length)-1]["sensor_id"]);
+          console.log(sensor);
             if(sensor == "1")
             {
              
               $('#rect').show();
-              
             }
             if(sensor == "2")
             {
-              
               $('#sensor2').show();
+              alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
             }
             
          });
-     });
+}
+
    });
    </script>
 
