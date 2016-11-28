@@ -760,7 +760,7 @@
 </center>
 <br>
 <div id= "paragraph">
-     <a class="btn btn-large btn-info" id="cchange" >Change</a>
+     <a class="btn btn-large btn-info" id="cchange" >Find My Child</a>
     <br>
     <!-- <button >Reset</button> -->
      <br>
@@ -776,7 +776,7 @@
     $('#rect').hide();
     $('#sensor2').hide();
      $("#cchange").click(function(){
-         $.getJSON("http://neverlost.herokuapp.com/map/show", function(data){
+         $.getJSON("http://localhost:3000/map/show", function(data){
 
           console.log(data);
 

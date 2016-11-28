@@ -31,15 +31,18 @@ header {
 
 
 }
-
+/*
 #centern{
 
 	text-align: center;
 	font-family: 'Century Gothic';
 	font-size: 50px;
 	color: #fff;
-}
+}*/
 
+.svg-container {
+  width: 10em;
+}
 
 #paragraph
 {
@@ -60,7 +63,7 @@ header {
 #white
 {
 	font-family: 'Century Gothic';
-	font-size: 20px;
+	font-size: 25px;
 	color: #fff;
 
 }
@@ -79,25 +82,16 @@ header {
 {
 	font-family: 'Century Gothic';
 	font-size: 15px;
-	color: #46b8da;
+	color: black;
 }
 
-
-#intro {
-    height: 635px;
-    width: 100%;
-    background-image: url('1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-    text-align: center;
-    position: relative;
-    margin:0 auto;
+.floatleft {
+    float:left;
 }
 
 /*
 @media only screen and (max-width: 479px){
-    #intro { width: 90%; }
+    #intro { width: 100%; }
 }
 @media only screen and (max-width: 320px) {
 
