@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-users = User.create({email:"admin@admin.com",password:"admin1",name:"Amna", admin:true, id: 1} )
+users = User.create({email:"admin@admin.com",password:"admin1",name:"Amna", admin:true, id: 1, phone:"123456"} )
 sensors = Sensor.create({sensor_id: "1"})
 rfid_tags = RfidTag.create({tag_id: "1"})
 lendings = Lending.create({tag_id: "1", user_id: 1})

@@ -16,7 +16,8 @@
         <th id= "tablefont">Tag</th>
         <th id= "tablefont">Sensor</th>
         <th id= "tablefont">Time</th>
-        <th id= "tablefont">Actions</th>
+        <th id= "tablefont">Phone</th>
+         <th id= "tablefont">Actions</th>
       </tr>
   </thread>
   <tbody>
@@ -25,7 +26,8 @@
         <td><%= detection.tag_id %></td>
         <td><%= detection.sensor_id %></td>
         <td><%= detection.time %></td>
-        <td>
+<!--         <td><%= detection.lending.tag_id%></td>
+ -->        <td>
           <%= link_to 'Show', detection,class: 'btn btn-large btn-info' %>
           <%= link_to 'Edit', edit_lending_path(detection),class: 'btn btn-large btn-info' %>
           <%= link_to 'Destroy', detection, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-large btn-info' %>

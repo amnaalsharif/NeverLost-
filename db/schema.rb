@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161113131846) do
+ActiveRecord::Schema.define(version: 20161128070016) do
 
   create_table "detections", force: :cascade do |t|
     t.string   "tag_id"
@@ -59,8 +59,8 @@ ActiveRecord::Schema.define(version: 20161113131846) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.boolean  "admin"
-    t.text     "phone"
-    t.text     "name"
+    t.string   "name"
+    t.string   "phone"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
