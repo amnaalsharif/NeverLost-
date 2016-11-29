@@ -5,7 +5,7 @@
 <%= form_tag detections_path, :method => 'get' do %>
 <p>
   <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "Search", :tag_id => nil %>
+  <%= submit_tag "Search", :phone => nil %>
 </p>
 <% end %>
 <div class="table-responsive">
@@ -26,7 +26,12 @@
         <td><%= detection.tag_id %></td>
         <td><%= detection.sensor_id %></td>
         <td><%= detection.time %></td>
-        <!-- <td><%#= detection.lending.tag_id%></td> -->
+        <td>
+          <% lendings = detection.rfid_tag.lendings %>
+            <%  lendings.each do |l| %>
+              <%= l.user.phone %>
+            <% end %>
+          </td>
         <td>
           <%= link_to 'Show', detection,class: 'btn btn-large btn-info' %>
           <%= link_to 'Edit', edit_detection_path(detection),class: 'btn btn-large btn-info' %>
