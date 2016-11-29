@@ -751,10 +751,7 @@
   C327.6,150.2,324.9,147.4,321.5,147.4z M321.5,155.6c-1.2,0-2.2-1-2.2-2.2c0-1.2,1-2.2,2.2-2.2c1.2,0,2.2,1,2.2,2.2
   C323.7,154.7,322.7,155.6,321.5,155.6z"/>
 
-   <!-- <circle opacity="0.33" fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" cx="273.5" cy="231.9" r="18.6" id="rect"/>
-
-<circle opacity="0.33" fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" cx="315" cy="154" r="7" id="sensor2"/>-->
-
+   
 
 </svg>
 </center>
@@ -790,13 +787,14 @@
           console.log(sensor);
             if(sensor == "1")
             {
-             
+             $('#sensor2').hide();
               $('#rect').show();
             }
             if(sensor == "2")
             {
+              $('#rect').hide();
               $('#sensor2').show();
-              //alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
+              alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
             }
             
          });
