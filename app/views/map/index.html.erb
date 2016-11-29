@@ -777,7 +777,7 @@
     $('#sensor2').hide();
    $(document).ready(function(){
 
-    setInterval(getDetections,500);
+    setInterval(getDetections,5000);
     function getDetections()
     {
 
@@ -796,7 +796,7 @@
             if(sensor == "2")
             {
               $('#sensor2').show();
-              alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
+              //alert("DANGER!! YOURE CHILD IS LEAVING THE BUILDING");
             }
             
          });
