@@ -27,10 +27,14 @@
         <td><%= detection.sensor_id %></td>
         <td><%= detection.time %></td>
         <td>
+        
           <% lendings = detection.rfid_tag.lendings %>
             <%  lendings.each do |l| %>
-              <%= l.user.phone %>
+              
+              <%= link_to l.user.phone, map_index_path(l.user.id) %>
+<!--               <%#= link_to "UserMap", map_path(@l.user.user_id) %> -->
             <% end %>
+
           </td>
         <td>
           <%= link_to 'Show', detection,class: 'btn btn-large btn-info' %>
