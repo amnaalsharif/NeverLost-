@@ -121,6 +121,13 @@ a:visited {
     background-color: #000000;
     border-color: transparent;
 }
+#tablefont
+{
+  font-family: 'Century Gothic';
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
 
 
 /*=================================================================
