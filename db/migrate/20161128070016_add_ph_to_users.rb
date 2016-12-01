@@ -1,5 +1,5 @@
 class AddPhToUsers < ActiveRecord::Migration
   def change
-    add_column :users, :phone, :string
+    add_column :users, :phone, :integer
   end
 end
